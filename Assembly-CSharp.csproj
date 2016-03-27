@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{48F48A2F-DA92-B816-F87E-70946E9A5BA3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_2;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CAMERA_DRAWER_LOGS</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Resource\ColorPicker\ColorPickerModule.cs" />
+     <Compile Include="Assets\Resource\ColorPicker\PickerLeftUIElement.cs" />
+     <Compile Include="Assets\Resource\ColorPicker\PickerRightUIElement.cs" />
+     <Compile Include="Assets\Scripts\BloomScript.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\AbstractColorPicker.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\ColorPickerSampler.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\ColorPropertyDisplay.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\GradientColorPicker.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\PlaneGridCreator.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\SpectrumColorPicker.cs" />
+     <Compile Include="Assets\Scripts\ColorPicker_v2\SpectrumColorPickerModule.cs" />
+     <Compile Include="Assets\Scripts\Common\Attributes\SingletonPrefabAttribute.cs" />
+     <Compile Include="Assets\Scripts\Common\BaseMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Common\SingletonBaseMonoBehavoiur.cs" />
+     <Compile Include="Assets\Scripts\Common\UI\UIModule.cs" />
+     <Compile Include="Assets\Scripts\EasingFormulas.cs" />
+     <Compile Include="Assets\Scripts\FileManager\SerializedResource.cs" />
+     <Compile Include="Assets\Scripts\GOL\MaterialMultyCompileFlags.cs" />
+     <Compile Include="Assets\Scripts\GOL\Processor.cs" />
+     <Compile Include="Assets\Scripts\PostProcessorImage.cs" />
+     <Compile Include="Assets\Scripts\RandomDrawer.cs" />
+     <Compile Include="Assets\Scripts\RandomDrawerController.cs" />
+     <Compile Include="Assets\Scripts\RenderTextureCreator.cs" />
+     <Compile Include="Assets\Scripts\RenderTextureDrawer\CameraDrawer.cs" />
+     <Compile Include="Assets\Scripts\RenderTextureDrawer\Layer.cs" />
+     <Compile Include="Assets\Scripts\RulesCreator.cs" />
+     <Compile Include="Assets\Scripts\SaveOnDisk.cs" />
+     <Compile Include="Assets\Scripts\Screen1.cs" />
+     <Compile Include="Assets\Scripts\ScrollView.cs" />
+     <Compile Include="Assets\Scripts\UI\GolDisplay.cs" />
+     <Compile Include="Assets\Scripts\UI\NumericKeyboard\NumericKeyboard.cs" />
+     <Compile Include="Assets\Scripts\UI\SlideInOut.cs" />
+     <Compile Include="Assets\Scripts\ViewCreator.cs" />
+     <Compile Include="Assets\Scripts\ViewCreator1.cs" />
+     <Compile Include="Assets\aaaaaa.cs" />
+     <None Include="Assets\Resource\Shaders\GameOfLife 3.shader" />
+     <None Include="Assets\Resource\Shaders\GameOfLife.shader" />
+     <None Include="Assets\Resource\Shaders\RandomDrawer.shader" />
+     <None Include="Assets\Resource\Shaders\GameOfLife 2.shader" />
+     <None Include="Assets\Resource\Shaders\View.shader" />
+     <None Include="Assets\TEST\NewShader.shader" />
+     <None Include="Assets\Resource\Shaders\GameOfLife 1.shader" />
+     <None Include="Assets\Resource\Shaders\Bloom.shader" />
+     <None Include="Assets\Resource\Shaders\MobileBloom 1.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity_5.2.2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
